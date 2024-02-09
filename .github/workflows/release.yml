@@ -2,8 +2,8 @@ name: Mini10 Release Autobuilder
 
 on:
   push:
-    tags:
-      - '*'
+    branches:
+      - main
 
 jobs:
   build:
