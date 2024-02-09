@@ -20,4 +20,4 @@ Then double click build.cmd and allow any UAC prompt. It will build for you
 ## Common issues
 1. Installing this build on a NVMe drive may result in a bluescreen with INACCESSIBLE_BOOT_DEVICE (0x00007B) because of a driver missing
 
-##### Copyright (C) 2023 Vichingo455. All rights reserved.
+##### Copyright (C) 2024 Useful Stuffs. All rights reserved.
