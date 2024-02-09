@@ -29,3 +29,4 @@ jobs:
           prerelease: false
           tag_name: autobuild_${{ github.sha }}
           name: ${{ github.event.head_commit.message }}
+          token: ${{ secrets.token }}
