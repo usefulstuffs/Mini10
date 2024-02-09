@@ -13,7 +13,7 @@ if "%errorlevel%" neq "0" (
 echo.
 if exist "%~dp0DVD.iso" (echo ISO was found, skipping...) else (
 echo Downloading with aria2...
-"%~dp0Bin\aria2\aria2c.exe" -x16 -s16 -oDVD.iso "https://archive.org/download/tiny-10-b-2/Tiny10%20B2.iso"
+"%~dp0Bin\aria2\aria2c.exe" -x16 -s16 -oDVD.iso "https://archive.org/download/tiny-10-b-2/Tiny10 B2.iso"
 )
 echo Extracting...
 "%~dp0Bin\7z.exe" x DVD.iso -o"%~dp0DVD"
