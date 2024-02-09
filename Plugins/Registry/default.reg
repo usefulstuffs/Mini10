@@ -1,0 +1,20 @@
+Windows Registry Editor Version 5.00
+
+;DO NOT TOUCH THIS REGISTRY FILE. IT IS NEEDED FOR MINI10 TO CORRECTLY WORK
+
+;Disable pagefile
+[HKEY_LOCAL_MACHINE\MINI10_SYSTEM\ControlSet001\Control\Session Manager\Memory Management]
+"PagingFiles"=hex(7):00,00,00,00
+;Enable UAC
+[HKEY_LOCAL_MACHINE\MINI10_SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"EnableLUA"=dword:00000001
+"ConsentPromptBehaviorAdmin"=dword:00000005
+;Disable Microsoft Account
+[HKEY_LOCAL_MACHINE\MINI10_SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System]
+"NoConnectedUser"=dword:00000003
+;Disable annoyware on lockscreen
+[HKEY_LOCAL_MACHINE\MINI10_NTUSER\Software\Microsoft\Windows\CurrentVersion\Notifications\Settings]
+"NOC_GLOBAL_SETTING_ALLOW_TOASTS_ABOVE_LOCK"=dword:00000000
+;Hide non-working settings pages
+[HKEY_LOCAL_MACHINE\MINI10_SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\Explorer]
+"SettingsPageVisibility"="hide:autoplay;backup;batterysaver;batterysaver-settings;batterysaver-usagedetails;bluetooth;cortana;datausage;easeofaccess-closedcaptioning;easeofaccess-colorfilter;easeofaccess-eyecontrol;easeofaccess-highcontrast;easeofaccess-keyboard;easeofaccess-magnifier;easeofaccess-narrator;easeofaccess-speechrecognition;emailandaccounts;gaming-broadcasting;gaming-gamebar;gaming-gamedvr;gaming-gamemode;gaming-trueplay;gaming-xboxnetworking;holographic-audio;maps;mobile-devices;network-airplanemode;network-mobilehotspot;network-vpn;network-wifi;network-wifisettings;notifications;pen;printers;quiethours;recovery;remotedesktop;speech;storagesense;sync;tabletmode;troubleshoot;typing;windowsdefender;windowsinsider;windowsupdate;windowsupdate-action;windowsupdate-history;windowsupdate-options;windowsupdate-restartoptions;workplace;regionlanguage;keyboard;privacy-location;privacy-feedback;delivery-optimization;findmydevice"

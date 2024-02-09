@@ -1,0 +1,1 @@
+Place here files that will be automatically added to the Windows Setup.

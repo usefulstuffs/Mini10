@@ -1,0 +1,1 @@
+Place here files that will be automatically added to the ISO root
